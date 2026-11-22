@@ -4,57 +4,79 @@ title: "Accueil"
 meta_title: "ER Rénovation à Passy : peinture, dégâts des eaux, déménagement"
 description: "ER Rénovation, artisan à Passy : peinture, remise en état après dégât des eaux, ratissage, débarras et déménagement à Sallanches, Chamonix, Megève et Saint-Gervais. Devis gratuit."
 ---
-<section class="hero light big">
+<section class="hero dk">
   <div class="hero-t">
-    <h1>Peinture, remise en état et déménagement à Passy et dans le Pays du Mont-Blanc</h1>
-    <p class="lead">ER Rénovation intervient chez les particuliers, les agences immobilières et les syndics : peinture, remise en état après dégât des eaux, enduits, débarras et déménagement. Rapide, précis, fiable.</p>
-    <div class="btns"><a class="btn btn-p" href="{{ '/devis-gratuit/' | relative_url }}">Demander un devis gratuit</a><a class="btn btn-g" href="tel:{{ site.data.site.phone_e164 }}">{{ site.data.site.phone }}</a></div>
-    <p class="hero-facts" style="border-top-color:#cfc8bd;color:#6a655f"><span>Près de 200 chantiers</span><span>Google {{ site.data.site.google_rating }}/5, {{ site.data.site.google_reviews_count }} avis</span><span>Devis gratuit</span></p>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Passy · Pays du Mont-Blanc</p>
+        <h1>Peinture, <em>remise en état</em> et déménagement à Passy et dans le Pays du Mont-Blanc</h1>
+        <p class="lead">ER Rénovation intervient chez les particuliers, les agences immobilières et les syndics : peinture, remise en état après dégât des eaux, enduits, débarras et déménagement. Rapide, précis, fiable.</p>
+        <div class="btns"><a class="btn btn-p" href="{{ '/devis-gratuit/' | relative_url }}">Demander un devis gratuit</a><a class="btn btn-g" href="tel:{{ site.data.site.phone_e164 }}">{{ site.data.site.phone }}</a></div>
+      </div>
+      <div class="pic">{% include img.html name="accueil-hero" alt="Artisan ER Rénovation au travail dans un logement à Passy" ratio="4/5" eager=true sizes="(min-width:980px) 40vw, 100vw" %}</div>
+    </div>
+    <div class="facts-bar">
+      <div><strong>Près de 200</strong>chantiers réalisés</div>
+      <div><strong>{{ site.data.site.google_rating }}/5</strong>{{ site.data.site.google_reviews_count }} avis Google</div>
+      <div><strong>{{ site.data.site.founded }}</strong>année de création</div>
+      <div><strong>6 j / 7</strong>lundi au samedi, 8 h à 19 h 30</div>
+    </div>
   </div>
-  <div class="pic">{% include img.html name="accueil-hero" alt="Artisan ER Rénovation au travail dans un logement à Passy" ratio="4/3" eager=true sizes="(min-width:980px) 45vw, 100vw" %}</div>
 </section>
 
 <section class="sec">
-  <div class="wrap split">
-    <h2>Nos prestations</h2>
-    <div class="idx">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2>Nos <em>prestations</em></h2>
+      <p>Une offre resserrée sur les travaux où nous sommes les plus efficaces, de la préparation des supports à la finition.</p>
+    </div>
+    <div class="svc">
       {%- for s in site.data.services %}
-      <a class="row" href="{{ s.url | relative_url }}"><span class="nm">{{ s.name }}</span><span class="ds">{{ s.short }}</span></a>
+      <a href="{{ s.url | relative_url }}"><span class="n">{{ forloop.index | prepend: '0' }}</span><span class="nm">{{ s.name }}</span><span class="ds">{{ s.short }}</span><span class="go">Découvrir</span></a>
       {%- endfor %}
+      <a class="ag" href="{{ '/devis-gratuit/' | relative_url }}"><span class="n">08</span><span class="nm">Votre projet</span><span class="ds">Décrivez-le nous : devis gratuit et détaillé, réponse rapide.</span><span class="go">Demander un devis</span></a>
     </div>
   </div>
 </section>
 
-<section class="sec" style="padding-top:0">
-  <div class="wrap">
-    <div class="callout">
-      <h2>Agences immobilières, syndics, gestionnaires</h2>
-      <p>Fin de bail, avant une vente, après un sinistre : un interlocuteur unique, des devis rapides et des délais annoncés pour remettre vos logements en état.</p>
-      <div class="btns"><a class="btn btn-p" href="{{ '/agences-immobilieres-syndics/' | relative_url }}">Voir ce que nous faisons pour les agences</a></div>
+<section class="sec dark">
+  <div class="wrap band">
+    <div>
+      <p class="eyebrow">Agences, syndics, gestionnaires</p>
+      <h2>Vos logements remis en état, <em>sans vous en occuper</em></h2>
+      <p>Fin de bail, avant une vente, après un sinistre : un interlocuteur unique, des devis rapides et des délais annoncés.</p>
+      <div class="btns"><a class="btn btn-p" href="{{ '/agences-immobilieres-syndics/' | relative_url }}">Ce que nous faisons pour les agences</a></div>
     </div>
+    <ul>
+      <li>Un seul interlocuteur, de la demande à la réception</li>
+      <li>Devis rapide sur visite ou sur photos</li>
+      <li>Débarras, assèchement, enduits et peinture par la même équipe</li>
+      <li>Planning adapté aux résidences et à la saison touristique</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2>Un artisan qui intervient vite et soigne <em>chaque détail</em></h2>
+    </div>
+    <div class="pri">
+      <div><div class="n">I</div><h3>Réactif</h3><p>Visite et devis rapides, planning annoncé et respecté.</p></div>
+      <div><div class="n">II</div><h3>Pointilleux</h3><p>Supports préparés, finitions contrôlées, chantier rendu propre.</p></div>
+      <div><div class="n">III</div><h3>Un seul interlocuteur</h3><p>Débarras, assèchement, enduits et peinture par la même entreprise.</p></div>
+      <div><div class="n">IV</div><h3>Fiable</h3><p>Près de 200 chantiers réalisés et {{ site.data.site.google_reviews_count }} avis Google.</p></div>
+    </div>
+    <div class="pic" style="--ar:21/9;margin-top:64px">{% include img.html name="accueil-artisan-chantier" alt="Chantier de remise en état réalisé par ER Rénovation" ratio="21/9" %}</div>
   </div>
 </section>
 
 <section class="sec alt">
   <div class="wrap split">
-    <div class="pic" style="--ar:4/5">{% include img.html name="accueil-artisan-chantier" alt="Chantier de remise en état réalisé par ER Rénovation" ratio="4/5" %}</div>
+    <h2>Zones d'<em>intervention</em></h2>
     <div>
-      <h2>Un artisan qui intervient vite et soigne chaque détail</h2>
-      <dl class="defs">
-        <div><dt>Réactif</dt><dd>Visite et devis rapides, planning annoncé et respecté.</dd></div>
-        <div><dt>Pointilleux</dt><dd>Supports préparés, finitions contrôlées, chantier rendu propre.</dd></div>
-        <div><dt>Un seul interlocuteur</dt><dd>Débarras, assèchement, enduits et peinture par la même entreprise.</dd></div>
-        <div><dt>Fiable</dt><dd>Près de 200 chantiers réalisés et {{ site.data.site.google_reviews_count }} avis Google.</dd></div>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap split">
-    <h2>Zones d'intervention</h2>
-    <div>
-      <p>Nous intervenons autour de Passy :{% for z in site.data.zones %} <a href="{{ z.url | relative_url }}">{{ z.name }}</a>{% unless forloop.last %},{% endunless %}{% endfor %}. Pour un chantier plus éloigné en Haute-Savoie, jusqu'à Thonon, contactez-nous : nous étudions chaque demande.</p>
+      <ul class="towns">{% for z in site.data.zones %}<li><a href="{{ z.url | relative_url }}">{{ z.name }}</a></li>{% endfor %}</ul>
+      <p>Pour un chantier plus éloigné en Haute-Savoie, jusqu'à Thonon, contactez-nous : nous étudions chaque demande.</p>
       <div class="facts">
         <p><span class="kicker">ER Rénovation en bref :</span> entreprise de rénovation basée au {{ site.data.site.street }}, {{ site.data.site.zip }} {{ site.data.site.city }} ({{ site.data.site.region }}). Peinture intérieure et extérieure, remise en état après dégât des eaux (assèchement par déshumidificateur, plâtre, enduit, peinture), ratissage et enduit lisse, petits travaux de plâtrerie, sols souples, déménagement, débarras et nettoyage. Ouvert du lundi au samedi, de 8 h à 19 h 30. Devis gratuit.</p>
       </div>
@@ -62,5 +84,5 @@ description: "ER Rénovation, artisan à Passy : peinture, remise en état aprè
   </div>
 </section>
 
-{% include faq.html items=site.data.home_faq title="Questions fréquentes" %}
-{% include cta-band.html title="Un chantier à nous confier ?" %}
+{% include faq.html items=site.data.home_faq %}
+{% include cta-band.html title="Un chantier à nous <em>confier&nbsp;?</em>" %}

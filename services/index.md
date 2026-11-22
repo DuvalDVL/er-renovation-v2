@@ -22,4 +22,4 @@ permalink: /services/
     </div>
   </div>
 </section>
-{% include cta-band.html title="Parlons de votre projet" %}
+{% include cta-band.html title="Parlons de votre <em>projet</em>" %}

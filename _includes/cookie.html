@@ -1,7 +1,7 @@
 {%- if site.data.site.ga4 != "" -%}
-<div id="cookie-bar" role="dialog" aria-label="Cookies" hidden style="position:fixed;left:12px;right:12px;bottom:12px;z-index:80;background:#14181b;color:#fff;padding:16px 18px;border-radius:12px;font-size:.9rem;box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:560px">
-  <p style="margin:0 0 12px">Nous utilisons Google Analytics pour mesurer l'audience du site, uniquement avec votre accord. <a href="{{ '/politique-de-confidentialite/' | relative_url }}" style="color:#e08a5c">En savoir plus</a></p>
-  <div style="display:flex;gap:8px"><button type="button" class="btn btn-p" data-c="granted" style="padding:10px 16px">Accepter</button><button type="button" class="btn btn-g" data-c="denied" style="padding:10px 16px">Refuser</button></div>
+<div id="cookie-bar" role="dialog" aria-label="Cookies" hidden style="position:fixed;left:12px;right:12px;bottom:12px;z-index:80;background:#111;color:#fff;padding:18px 20px;border-radius:0;border:1px solid #3a3733;font-size:.9rem;line-height:1.6;box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:560px">
+  <p style="margin:0 0 12px">Nous utilisons Google Analytics pour mesurer l'audience du site, uniquement avec votre accord. <a href="{{ '/politique-de-confidentialite/' | relative_url }}" style="color:#c4a16b">En savoir plus</a></p>
+  <div style="display:flex;gap:8px"><button type="button" class="btn" data-c="granted" style="padding:13px 18px;background:#c4a16b;color:#111">Accepter</button><button type="button" class="btn" data-c="denied" style="padding:13px 18px;background:transparent;color:#fff;border-color:#76706a">Refuser</button></div>
 </div>
 <script>
 (function(){

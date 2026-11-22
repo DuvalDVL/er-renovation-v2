@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
-<section class="hero light">
+<section class="hero light has-pic">
   <div class="hero-t">
     {% include breadcrumbs.html %}
-    <h1 class="sm">{{ page.h1 | default: page.title }}</h1>
-    <p class="lead">{{ page.lead }}</p>
-    <div class="btns"><a class="btn btn-p" href="{{ '/devis-gratuit/' | relative_url }}">Demander un devis gratuit</a><a class="btn btn-g" href="tel:{{ site.data.site.phone_e164 }}">{{ site.data.site.phone }}</a></div>
+    <div class="hero-in">
+      <div>
+        <h1 class="sm">{{ page.h1 | default: page.title }}</h1>
+        <p class="lead">{{ page.lead }}</p>
+        <div class="btns"><a class="btn btn-p" href="{{ '/devis-gratuit/' | relative_url }}">Devis gratuit</a><a class="btn btn-g" href="tel:{{ site.data.site.phone_e164 }}">{{ site.data.site.phone }}</a></div>
+      </div>
+      <div class="pic">{% include img.html name=page.image alt=page.image_alt ratio="4/3" eager=true sizes="(min-width:980px) 45vw, 100vw" %}</div>
+    </div>
   </div>
-  <div class="pic">{% include img.html name=page.image alt=page.image_alt ratio="4/3" eager=true sizes="(min-width:980px) 45vw, 100vw" %}</div>
 </section>
 <section class="sec">
   <div class="wrap layout">

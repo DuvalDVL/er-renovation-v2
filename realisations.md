@@ -21,4 +21,4 @@ permalink: /realisations/
     </div>
   </div>
 </section>
-{% include cta-band.html title="Votre projet" %}
+{% include cta-band.html title="Votre <em>projet</em>" %}
