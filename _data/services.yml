@@ -1,0 +1,21 @@
+- url: /services/peinture-interieure-exterieure/
+  name: Peinture intérieure et extérieure
+  short: "Appartements, maisons, parties communes : une peinture soignée, préparée et protégée."
+- url: /services/reparation-degats-eaux/
+  name: Remise en état après dégât des eaux
+  short: "Assèchement par déshumidificateur, puis plâtre, enduit et peinture une fois la fuite réparée."
+- url: /services/demenagement-nettoyage/
+  name: Déménagement, débarras et nettoyage
+  short: "Pour particuliers, agences et successions : un chantier vidé, nettoyé, remis prêt à vivre."
+- url: /services/revetements-muraux/
+  name: Ratissage et enduit lisse
+  short: "Murs et plafonds abîmés remis à plat avant peinture, papier peint ou toile."
+- url: /services/revetements-sols/
+  name: Sols souples
+  short: "Pose de sols PVC, vinyle et lames clipsées, du support à la finition."
+- url: /services/platrerie/
+  name: Petits travaux de plâtrerie
+  short: "Caissons, cloisons, réparations de placo, au forfait."
+- url: /services/petits-travaux/
+  name: Petits travaux de maçonnerie et menuiserie
+  short: "Réparations ponctuelles, poses et ajustements pour finir un chantier."

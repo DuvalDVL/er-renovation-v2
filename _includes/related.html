@@ -1,0 +1,12 @@
+{%- if page.related and page.related.size > 0 -%}
+<section class="sec alt">
+  <div class="wrap split">
+    <h2>À voir aussi</h2>
+    <div class="idx">
+      {%- for u in page.related %}{% for s in site.data.services %}{% if s.url == u %}
+      <a class="row" href="{{ s.url | relative_url }}"><span class="nm">{{ s.name }}</span><span class="ds">{{ s.short }}</span></a>
+      {%- endif %}{% endfor %}{% endfor %}
+    </div>
+  </div>
+</section>
+{%- endif -%}

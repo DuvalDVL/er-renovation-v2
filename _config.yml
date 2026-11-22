@@ -1,0 +1,33 @@
+# ER Rénovation : site Jekyll (GitHub Pages via GitHub Actions)
+
+title: ER Rénovation
+description: "Peinture, remise en état après dégât des eaux, déménagement et débarras à Passy, Sallanches, Chamonix, Megève et Saint-Gervais."
+lang: fr
+
+# URL de production
+url: "https://er-renovation.com"
+baseurl: ""
+
+# true = site indexable. Passer à false pour le masquer à Google (noindex + robots.txt Disallow).
+indexable: true
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - A_MODIFIER.md
+  - tools
+  - node_modules
+  - assets/img/originals
+  - vendor

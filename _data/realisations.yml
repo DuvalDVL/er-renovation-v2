@@ -1,0 +1,12 @@
+- name: realisation-peinture-1
+  alt: "Peinture intérieure d'un appartement"
+- name: realisation-dde-1
+  alt: "Remise en état après dégât des eaux : avant et après"
+- name: realisation-debarras-1
+  alt: "Débarras et nettoyage d'un logement"
+- name: realisation-ratissage-1
+  alt: "Ratissage et enduit lisse d'un mur"
+- name: realisation-peinture-2
+  alt: "Peinture d'une cage d'escalier"
+- name: realisation-sol-1
+  alt: "Pose d'un sol souple"

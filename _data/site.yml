@@ -1,0 +1,33 @@
+# Informations de l'entreprise : modifiées ici, elles se mettent à jour partout.
+name: "ER Rénovation"
+legal_name: "ER Rénovation"
+legal_form: "Entreprise individuelle (E.I.)"
+siret: "885 233 908 00015"
+manager: "Muhammet Er"
+founded: 2020
+phone: "06 88 48 34 03"
+phone_e164: "+33688483403"
+email: "errenovation74190@gmail.com"
+street: "481 avenue de Chamonix"
+zip: "74190"
+city: "Passy"
+region: "Haute-Savoie"
+hours_label: "Du lundi au samedi, de 8 h à 19 h 30"
+facebook: "https://www.facebook.com/profile.php?id=61556789047369"
+
+# Formulaire de contact : identifiant Formspree (formspree.io/f/XXXXXXXX)
+formspree: "mjknkayj"
+
+# Mesure d'audience, activée seulement après consentement
+ga4: "G-FWX8S7YRJ5"
+google_reviews_url: "https://www.google.com/search?q=er+renovation"
+google_rating: "5,0"
+google_reviews_count: 11
+
+areas:
+  - Passy
+  - Sallanches
+  - Saint-Gervais
+  - Chamonix
+  - Megève
+  - Haute-Savoie (sur demande)

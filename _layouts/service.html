@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="hero light">
+  <div class="hero-t">
+    {% include breadcrumbs.html %}
+    <h1 class="sm">{{ page.h1 | default: page.title }}</h1>
+    <p class="lead">{{ page.lead }}</p>
+    <div class="btns"><a class="btn btn-p" href="{{ '/devis-gratuit/' | relative_url }}">Demander un devis gratuit</a><a class="btn btn-g" href="tel:{{ site.data.site.phone_e164 }}">{{ site.data.site.phone }}</a></div>
+  </div>
+  <div class="pic">{% include img.html name=page.image alt=page.image_alt ratio="4/3" eager=true sizes="(min-width:980px) 45vw, 100vw" %}</div>
+</section>
+<section class="sec">
+  <div class="wrap layout">
+    <div class="prose">{{ content }}</div>
+    <aside class="aside" aria-label="Contact">
+      <h3>Un devis pour ce projet</h3>
+      <p>Gratuit, détaillé, remis en général sous une semaine.</p>
+      <p><strong>{{ site.data.site.phone }}</strong><br>{{ site.data.site.hours_label }}</p>
+      <p>Zone : {{ site.data.site.areas | join: ", " }}.</p>
+      <a class="btn btn-p" href="{{ '/devis-gratuit/' | relative_url }}">Décrire mon projet</a>
+    </aside>
+  </div>
+</section>
+{% include faq.html items=page.faq %}
+{% include related.html %}
+{% include cta-band.html %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"provider":{"@id":{{ '/#entreprise' | absolute_url | jsonify }}},"areaServed":[{"@type":"AdministrativeArea","name":"Haute-Savoie"},{"@type":"AdministrativeArea","name":"Canton de Genève"}]}</script>
